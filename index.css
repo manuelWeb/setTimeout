@@ -1,0 +1,21 @@
+.centralEvent{position:relative; width:964px; height:465px; margin:0;background: url(bg.jpg) no-repeat;}
+.like-h1,.like-h2{position: absolute;}
+.like-h1{top:4px;left:348px;margin:0;font:900 48px Arial, Helvetica, sans-serif;color:#2674AD;}
+.like-h2{top:147px;left:334px;margin: 0;font: italic normal 24px Arial, Helvetica, sans-serif; color: #FFF; }
+.like-h2 span{font-size: 34px;}
+.centralEvent .bt-cata{position:relative;float:right;height:216px;width:166px;margin-top:36px;margin-right:28px;text-decoration: none;}
+.centralEvent .bt-cata img{position:absolute;right:5px;-moz-transform: rotate(5deg);-webkit-transform: rotate(5deg);-o-transform:rotate(5deg);-ms-transform:rotate(5deg);transform:rotate(5deg);-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;border:none;}
+.centralEvent .bt-cata:hover img{-moz-transform: rotate(-5deg); -webkit-transform: rotate(-5deg); -o-transform: rotate(-5deg); -ms-transform: rotate(-5deg); transform: rotate(-5deg);}
+.centralEvent .bt-cata span{position:absolute;top:0;left:0;height:216px;width:166px;background:url(cat_link.png) no-repeat;}
+.centralEvent .bt-cata span span{height:auto;width:auto;right:0;margin-top:174px;text-align:center;font:normal  16px/21px Arial, Helvetica, sans-serif;color:#FF0066;}
+.centralEvent a.btn{position:absolute;top:214px;left:323px;text-decoration:none;background:url(bt_selection-ON.png) no-repeat 0 0;}
+.centralEvent .btn img{border:none;font-family:Georgia, "Times New Roman", Times, serif;color:#2674AD;font-size:21px;font-weight:bold;font-style:italic; }
+.price {position: absolute; top: 80px; left: 836px; z-index: 2;}
+/* pck'numpck'*/
+.pck1,.pck2,.pck3,.pck4 {position:absolute;} /*JS>display:none;opacity:0;*/
+.pck1:hover,.pck2:hover,.pck3:hover,.pck4:hover {z-index:10;}
+.pck1 img,.pck2 img,.pck3 img,.pck4 img {border:0;}
+.pck1 {top:10px;left:20px;}
+.pck2 {top:2px;left:10px;}
+.pck3 {top:4px;left:660px;}
+.pck4 {top:10px;left:666px;}

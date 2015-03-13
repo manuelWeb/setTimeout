@@ -1,0 +1,40 @@
+- var_gaq_start = "_gaq.push(['local._trackEvent', "
+- var_gaq_end   = "document.location.pathname]);"
+- var_gaq_rayon     = "'encartHP_0315', 'RayonEvt_989', 'TH6-jardin-entretien', "
+
+- pck1_Link = "http://www.tempsl.fr/fr/loisirs/entretien-outils-jardin/arrache-mauvaises-herbes/4882015.html"
+- pck2_Link = "http://www.tempsl.fr/fr/vetements-accessoires/hiver/epandeur/9494113.html"
+- pck3_Link = "http://www.tempsl.fr/fr/loisirs/entretien-outils-jardin/scratch-plantes/5330014.html"
+- pck4_Link = "http://www.tempsl.fr/fr/maison-deco/bricolage/banc-jardin-pliable/5393251.html"
+- gaq_pck1 = "'encartHP_0315', 'TH6-jardin-entretien', 'pck1-4882015', "
+- gaq_pck2 = "'encartHP_0315', 'TH6-jardin-entretien', 'pck2-9494113', "
+- gaq_pck3 = "'encartHP_0315', 'TH6-jardin-entretien', 'pck3-5330014', "
+- gaq_pck4 = "'encartHP_0315', 'TH6-jardin-entretien', 'pck4-5393251', "
+
+- var_btn_rayon     = "http://www.tempsl.fr/fr/boutique/rayon_evenement.aspx?urlLangue=fr&nbp=99&pg=0&evenement_id=989"
+
+doctype strict
+html
+  head
+    meta http-equiv="Content-Type" content="text/html;charset=UTF-8"
+    link rel="stylesheet" type="text/css" href="index.css" media="all"
+    script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"
+    script type="text/javascript" src="evt-hover.js"
+    title TL_centralEvt
+  body
+    .centralEvent
+      #dia_container
+        a#id_diapo1.pck1 href=pck1_Link onclick==var_gaq_start+gaq_pck1+var_gaq_end
+          img src="pck1.png" alt=""
+        a#id_diapo2.pck2 href=pck2_Link onclick==var_gaq_start+gaq_pck2+var_gaq_end
+          img src="pck2.png" alt=""
+        a#id_diapo3.pck3 href=pck3_Link onclick==var_gaq_start+gaq_pck3+var_gaq_end
+          img src="pck3.png" alt=""
+        a#id_diapo4.pck4 href=pck4_Link onclick==var_gaq_start+gaq_pck4+var_gaq_end
+          img src="pck4.png" alt=""
+
+      a href==var_btn_rayon class="btn" onclick==var_gaq_start+var_gaq_rayon+var_gaq_end
+        img src="bt_selection.png" alt=""
+      img.price src="price.png" alt=""
+
+    script type="text/javascript" src="firstEvt_reveal.js"
