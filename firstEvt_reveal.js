@@ -29,28 +29,24 @@
   tab2.push(tabDia[1],tabDia[3]);
 
   fade_show(tab1,1000);
+  setTimeout("showNextTab()", 3000);
 
   function showNextTab (argument) {
     if(tab1[0].style.display == 'block' && tab2[0].style.display == 'none' && tab2[0].style.zIndex == ''){
       fade_show(tab2,1000);
-      console.log('et maintenant ?');
-      setTimeout("showNextTab()", 3000);
-    }else{
-      inc_zindex(tab1,1000,tab2);
-      console.log("tab1=opacity:0> z-index2 + opacity:1");
-
-      setTimeout("toggle_zIndex()", 3000)
+      setTimeout(toggle_zIndex(), 3000);
     }
   };
   function toggle_zIndex () {
-    if(tab2[0].style.zIndex == 1){
+    if(tab2[0].style.zIndex == ''){
+      setTimeout("inc_zindex(tab1,1000,tab2)", 3000);
+      setTimeout("toggle_zIndex()", 6000);
+    }else if(tab2[0].style.zIndex == 1){
       inc_zindex(tab2,1000,tab1);
       setTimeout("toggle_zIndex()", 3000)
     }else{
       inc_zindex(tab1,1000,tab2);
-      console.log('ici?')
       setTimeout("toggle_zIndex()", 3000)
     }
   }
 
-  setTimeout("showNextTab()", 3000);
