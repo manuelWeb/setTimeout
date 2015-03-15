@@ -25,8 +25,8 @@
   }
   var tab1 = [],
   tab2     = [];
-  tab1.push(tabDia[0],tabDia[2]);
-  tab2.push(tabDia[1],tabDia[3]);
+  tab1.push(tabDia[0],tabDia[2]);// pck1 (right) + pck3 (left)
+  tab2.push(tabDia[1],tabDia[3]);// pck2 (right) + pck4 (left)
 
   // on affiche tab1 puis 3s plus tard tab2
   fade_show(tab1,1000);
@@ -36,7 +36,9 @@
     if(tab1[0].style.display == 'block' && tab2[0].style.display == 'none' && tab2[0].style.zIndex == ''){
       fade_show(tab2,1000);
       // puis 3s plus tard on passe à toog_zIndex premier if
-      setTimeout("toggle_zIndex()", 3000);
+      setTimeout(function () {
+        toggle_zIndex();
+      }, 3000);
     }
   };
   function toggle_zIndex () {

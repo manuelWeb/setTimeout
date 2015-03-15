@@ -13,7 +13,7 @@
 .price {position: absolute; top: 80px; left: 836px; z-index: 2;}
 /* pck'numpck'*/
 .pck1,.pck2,.pck3,.pck4 {position:absolute;} /*JS>display:none;opacity:0;*/
-.pck1:hover,.pck2:hover,.pck3:hover,.pck4:hover {z-index:10;}
+/* .pck1:hover,.pck2:hover,.pck3:hover,.pck4:hover {z-index:10 !important;} */
 .pck1 img,.pck2 img,.pck3 img,.pck4 img {border:0;}
 .pck1 {top:10px;left:20px;}
 .pck2 {top:2px;left:10px;}
