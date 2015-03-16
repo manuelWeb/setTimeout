@@ -1,3 +1,4 @@
+// vérifier rendu dans IE7 // proteger par IEF // démarrage anime après chargement img
 function fade_show(divId, speed) {
   $(divId)
     .css({
