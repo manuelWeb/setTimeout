@@ -1,4 +1,4 @@
-// vérifier rendu dans IE7 // proteger par IEF // démarrage anime après chargement img
+(function (argument) {
 function fade_show(divId, speed) {
   $(divId)
     .css({
@@ -69,3 +69,5 @@ function toggle_zIndex() {
     }, 3000);
   }
 }
+
+})();// end ief
